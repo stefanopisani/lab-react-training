@@ -10,6 +10,11 @@ import Rating from './Rating';
 import DriverCard from './DriverCard';
 import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+import Facebook from './Facebook';
+import Signup from './SignupPage';
 
 function App() {
   return (
@@ -103,7 +108,23 @@ function App() {
       <LikeButton />
       <h1> Clickable Picture </h1>
       <ClickablePicture />
-
+      <h1> Dice </h1>
+      <Dice />
+      <h1> Carousel </h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+      <h1> Numbers Table </h1>
+      <NumbersTable limit={12} />
+      <h1> Facebook </h1>
+      <Facebook />
+      <h1> Sign-up </h1>
+      <Signup />
     </div>
   );
 }
